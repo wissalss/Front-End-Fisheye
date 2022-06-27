@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: none!important;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -22,6 +30,13 @@ h1 {
     margin-left: 100px;
 }
 
+.logo:focus {
+    outline: 0;
+    border: #901C1C solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 .photographer_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,6 +50,38 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.photographer_section article:focus {
+    outline: 0;
+    border: #901C1C solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 15px #312E2E;
+}
+
+.photographer_section article a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.photographer_section article a :focus {
+    outline: none;
+}
+
+.photographer_section article a :focus-visible {
+    outline: none!important;
+}
+
+.photographer_section article:hover {
+    outline: 0;
+    border: #901C1C solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 15px #312E2E;
 }
 
 .photographer_section article h2 {

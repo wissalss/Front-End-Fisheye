@@ -22,10 +22,11 @@ function displayData(photographers) {
             photographerHeader.appendChild(userCardDOM);
 
             bandeauPrix = photographer.price;
+            const bandeau_prix = document.getElementById("prix");
+            bandeau_prix.innerHTML = bandeauPrix + "€ / jour";
         }
     });
-    const bandeau_prix = document.getElementById("prix");
-    bandeau_prix.innerHTML = bandeauPrix + "€ / jour";
+
 }
 
 // MEDIAS ET LIGHTBOX DE LA PAGE DU PHOTOGRAPHE

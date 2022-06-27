@@ -7,7 +7,7 @@ document.body.appendChild(lightbox);
 
 //CREATION DES BOUTONS LIGHTBOX
 
-function createIconeLightboxDom() { //appelée dans photographer.js/ displayDataMedia()
+function createIconeLightboxDom() {
 
     const iconePrecedent = document.createElement("i");
     iconePrecedent.className = "fas fa-chevron-left";
@@ -36,7 +36,7 @@ function createIconeLightboxDom() { //appelée dans photographer.js/ displayData
 
 // CREATION IMAGE ET TITRE LIGHTBOX
 
-function createMediaLightboxDom(data) { //appelée dans photographer.js/displayDataMedia()
+function createMediaLightboxDom(data) {
 
     const mediaLightbox = document.createElement('div');
     mediaLightbox.className = "lightbox_media";
@@ -124,7 +124,8 @@ function mediaFactory(data) {
         infoPhoto.classList.add("info_photo");
         h2.textContent = title;
         nbreLike.textContent = likes;
-        nbreLike.setAttribute("title", "nombre de like de la photo");
+        nbreLike.setAttribute("aria-label", likes + "like ");
+        nbreLike.setAttribute("tabindex", "4");
         spanCoeur.className = "coeur";
         coeur.className = "fas fa-heart";
         coeur.setAttribute("aria-label", "icone coeur cliquable");
