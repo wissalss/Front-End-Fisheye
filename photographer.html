@@ -47,11 +47,11 @@
             <form id="form">
                 <div class=formData>
                     <label for="first">Prénom</label>
-                    <input class="text-control" aria-label="Veuillez entrer votre prénom" type="text" id="first" name="first" required minlength="3" />
+                    <input class="text-control" aria-label="Veuillez entrer votre prénom" type="text" id="prénom" name="first" required minlength="3" />
                 </div>
                 <div class=formData>
                     <label for="last">Nom</label>
-                    <input class="text-control" aria-label="Veuillez entrer votre nom" type="text" id="last" name="last" required minlength="3" />
+                    <input class="text-control" aria-label="Veuillez entrer votre nom" type="text" id="nom" name="last" required minlength="3" />
                 </div>
                 <div class=formData>
                     <label for="email">Email</label>
@@ -61,7 +61,7 @@
                     <label for="message">Votre message</label>
                     <textarea class="text-control" aria-label="Veuillez écrire votre message" type="text" id="message" name="message" required></textarea>
                 </div>
-                <button class="contact_button" type=b utton aria-label="envoyer le formulaire" id="envoyer">Envoyer</button>
+                <button class="contact_button" type=button aria-label="envoyer le formulaire" id="envoyer" onclick="validatModal()">Envoyer</button>
             </form>
         </div>
     </div>
